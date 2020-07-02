@@ -62,6 +62,10 @@ tricks too.
 
 3. IK optimization has not been implemented.
 
+###Visualization
+You need to install Blender to visualize the result bvh files.
+Just import the bvh file into Blender and press "White Space" Key.
+
 ## Citation
 If you use this code for your research, please cite their fancy paper:
 ```
