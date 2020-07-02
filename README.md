@@ -52,7 +52,7 @@ Learning curves showed below:
 There are some changes compared with code released by the author:
 1. I re-implement the architecture of the neural network. I use nn.Conv2d instead of
 nn.Conv1d for the skeleton convolution, because I think 2D convolution is more in line with the description about skeleton
-convolution according to the paper.
+convolution according to the paper. However, it seems that 2D convolution are not as efficient as the original 1D convolution.
 
 2. GAN part are deprecated(bad memories with it, training GAN needs lots of tricks). Learning to walk before you run.
 So, technically my training process is in a "paired"(supervised) mode.
