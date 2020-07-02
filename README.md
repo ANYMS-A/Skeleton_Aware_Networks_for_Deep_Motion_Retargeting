@@ -12,7 +12,7 @@ from left to right: input, target, output
 
 <img src="images/base_ball.gif" align="center"> <br>
 
-<img src="images/dancing_running_man.gif" align="center"><br>
+<img src="images/dancing_running_man.gif" align="center"> <br>
 
 ### Quick Start
 Just run
@@ -37,8 +37,7 @@ your customized skeletons. You might need to change some variables related with 
 defined in the
 ```bash
 ./model/skeleton.py
-```
-. 
+``` 
 also the names of joints defined in the
 ```bash
 ./datatsets/bvh_parser/py
@@ -48,7 +47,6 @@ An automatic way to generate the skeleton structure after skeleton pooling might
 Learning curves showed below:
 
 ![Loss Curve](./images/loss_curve.png)
-
 
 ### Note
 There are some changes compared with code released by the author:
