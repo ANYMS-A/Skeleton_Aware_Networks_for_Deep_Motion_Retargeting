@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="44571033-0e3c-4043-8772-7cff0f413c20" name="Default Changelist" comment="add requirements to README.md" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="d9823a5a-1f56-408a-8754-5d39a54357b3" />
+  <component name="ProjectId" id="1dDOLpGozA4J9Ija2rq1hvxjrxT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datasets/Mixamo/Aj" />
+      <recent name="$PROJECT_DIR$/datasets/Mixamo/BigVegas" />
+      <recent name="$PROJECT_DIR$/datasets" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.inference">
+    <configuration name="EDA (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skeleton_motion_retarget_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EDA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="draft" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skeleton_motion_retarget_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draft.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skeleton_motion_retarget_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/inference.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="motion_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skeleton_motion_retarget_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/datasets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datasets/motion_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skeleton_motion_retarget_new" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.inference" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.draft" />
+        <item itemvalue="Python.motion_dataset" />
+        <item itemvalue="Python.EDA (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44571033-0e3c-4043-8772-7cff0f413c20" name="Default Changelist" comment="" />
+      <created>1591956143073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591956143073</updated>
+      <workItem from="1591956144602" duration="64145000" />
+      <workItem from="1592450778770" duration="53199000" />
+      <workItem from="1592795843446" duration="316000" />
+      <workItem from="1592796563873" duration="282000" />
+      <workItem from="1592797493935" duration="24265000" />
+      <workItem from="1592823815323" duration="120000" />
+      <workItem from="1592877438073" duration="1002000" />
+      <workItem from="1592878621793" duration="25364000" />
+      <workItem from="1593311208100" duration="2852000" />
+      <workItem from="1593329928038" duration="19297000" />
+      <workItem from="1593434623991" duration="1819000" />
+      <workItem from="1593483615073" duration="22172000" />
+      <workItem from="1593569942313" duration="17822000" />
+      <workItem from="1593605437733" duration="121000" />
+      <workItem from="1593610792992" duration="4170000" />
+      <workItem from="1593656202439" duration="722000" />
+      <workItem from="1593658499213" duration="8926000" />
+      <workItem from="1593677178999" duration="72000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add requirements to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements to README.md" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Deployment" timestamp="1593483652376">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1593483652376" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593331274467">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593331274467" />
+    <state x="424" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592806788340">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="424" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1592806788340" />
+    <state x="268" y="52" key="CommitChangelistDialog2" timestamp="1593672417156">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="268" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593672417156" />
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1593677175461">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593677175461" />
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1593674209337" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1593656085459" />
+    <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1593328437242" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1593677175460">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593677175460" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1593674209336" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1593656085458" />
+    <state width="1398" height="225" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1593328437240" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1593677175459">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593677175459" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1593674209335" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1593656085454" />
+    <state width="1398" height="225" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1593328437239" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1593677175461">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593677175461" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1593674209337" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1593656085458" />
+    <state width="1398" height="225" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1593328437241" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1593602379151">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593602379151" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.803@0.23.1440.803" timestamp="1593429605475" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1593602379150">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593602379150" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.803@0.23.1440.803" timestamp="1593429605474" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1593602379150">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593602379150" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.803@0.23.1440.803" timestamp="1593429605473" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1593602379151">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593602379151" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.803@0.23.1440.803" timestamp="1593429605474" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1593677258145">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1593677258145" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1592742299596">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1592742299596" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1593658499639">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1593658499639" />
+    <state x="397" y="275" key="com.intellij.ide.util.TipDialog/0.23.1440.807@0.23.1440.807" timestamp="1592877446103" />
+    <state x="274" y="299" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1592910717047">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="274" y="299" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1592910717047" />
+    <state x="481" y="178" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1592878376477">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="481" y="178" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1440.900@0.0.1440.900" timestamp="1592878376477" />
+    <state x="378" y="85" width="683" height="729" key="find.popup" timestamp="1593427516969">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="85" width="683" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593427516969" />
+    <state x="359" y="222" key="ftp.server.browser" timestamp="1592878166812">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="359" y="222" key="ftp.server.browser/0.0.1440.900@0.0.1440.900" timestamp="1592878166812" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593595428769">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593595428768" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget_new$train.coverage" NAME="train Coverage Results" MODIFIED="1593600065409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$skeleton.coverage" NAME="skeleton Coverage Results" MODIFIED="1592883830973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$FKinematics.coverage" NAME="FKinematics Coverage Results" MODIFIED="1592910470803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$inference.coverage" NAME="inference Coverage Results" MODIFIED="1593396177888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget_new$draft.coverage" NAME="draft Coverage Results" MODIFIED="1593497207871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hand_retarget$BVH_FILE.coverage" NAME="BVH_FILE Coverage Results" MODIFIED="1592208529573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget_new$inference.coverage" NAME="inference Coverage Results" MODIFIED="1593670279240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hand_retarget$bvh_parser.coverage" NAME="bvh_parser Coverage Results" MODIFIED="1592213296693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
+    <SUITE FILE_PATH="coverage/hand_retarget$draft.coverage" NAME="draft Coverage Results" MODIFIED="1592878438842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$EDA.coverage" NAME="EDA Coverage Results" MODIFIED="1593403542952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$enc_and_dec.coverage" NAME="enc_and_dec Coverage Results" MODIFIED="1593402248020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$EDA__1_.coverage" NAME="EDA (1) Coverage Results" MODIFIED="1593405102960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$train.coverage" NAME="train Coverage Results" MODIFIED="1593417284909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget$draft.coverage" NAME="draft Coverage Results" MODIFIED="1592897111629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hand_retarget$calculate_mean_var.coverage" NAME="calculate_mean_var Coverage Results" MODIFIED="1592388578000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
+    <SUITE FILE_PATH="coverage/skeleton_motion_retarget_new$motion_dataset.coverage" NAME="motion_dataset Coverage Results" MODIFIED="1593484518346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datasets" />
+  </component>
+</project>
