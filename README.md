@@ -62,7 +62,9 @@ tricks too.
 
 3. IK optimization has not been implemented.
 
-###Visualization
+4. More data are needed for evaluating the generalization ability. 
+
+### Visualization
 You need to install Blender to visualize the result bvh files.
 Just import the bvh file into Blender and press "White Space" Key.
 
