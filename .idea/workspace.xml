@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44571033-0e3c-4043-8772-7cff0f413c20" name="Default Changelist" comment="add requirements to README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/base_ball.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/base_ball.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dancing_running_man.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/dancing_running_man.gif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +204,7 @@
       <workItem from="1593656202439" duration="722000" />
       <workItem from="1593658499213" duration="8926000" />
       <workItem from="1593677178999" duration="1521000" />
-      <workItem from="1593680286962" duration="88000" />
+      <workItem from="1593680286962" duration="309000" />
     </task>
     <servers />
   </component>
