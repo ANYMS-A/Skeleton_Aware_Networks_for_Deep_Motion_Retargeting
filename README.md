@@ -9,10 +9,10 @@ Pytorch >= 1.3.1
 ### Demo
 from left to right: input, target, output
 
+![image](https://github.com/crissallan/Skeleton_Aware_Networks_for_Deep_Motion_Retargeting/tree/master/images/base_ball.gif)
 
-<img src="images/base_ball.gif" align="center"> <br>
+![image](https://github.com/crissallan/Skeleton_Aware_Networks_for_Deep_Motion_Retargeting/tree/master/images/dancing_running_man.gif)
 
-<img src="images/dancing_running_man.gif" align="center"> <br>
 
 ### Quick Start
 Just run
