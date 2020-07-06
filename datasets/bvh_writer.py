@@ -1,6 +1,7 @@
 import numpy as np
 from utils.Quaternions import Quaternions
 from utils import build_joint_topology
+from utils.Filtering import gaussian_smooth
 
 
 # rotation with shape frame * J * 3
@@ -93,6 +94,7 @@ class BvhWriter(object):
         motion = motion.permute(1, 0).detach().cpu().numpy()
         positions = motion[:, -3:]
         rotations = motion[:, :-3]
+        rotations, positions = gaussian_smooth(rot=rotations, pos=positions)
         if order == 'quaternion':
             rotations = rotations.reshape((motion.shape[0], -1, 4))
         else:
