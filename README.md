@@ -16,7 +16,7 @@ from left to right: input, target, output
 
 ### Quick Start
 First you need to download the test motion data we need from [google drive](https://docs.google.com/uc?export=download&id=1_849LvuT3WBEHktBT97P2oMBzeJz7-UP) or
-[Baidu Disk](https://pan.baidu.com/s/1z1cQiqLUgjfxlWoajIPr0g).
+[Baidu Disk](https://pan.baidu.com/s/1z1cQiqLUgjfxlWoajIPr0g), the pass code is (ye1q).
 
 Place the Mixamo directory within ./datasets/
 
