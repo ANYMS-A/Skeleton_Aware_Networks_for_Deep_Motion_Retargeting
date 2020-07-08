@@ -6,7 +6,7 @@ import numpy as np
 
 from os import listdir
 
-data_path = './Mixamo/'
+data_path = './Mixamo_fbx/'
 
 directories = sorted([f for f in listdir(data_path) if not f.startswith(".")])
 for d in directories:
