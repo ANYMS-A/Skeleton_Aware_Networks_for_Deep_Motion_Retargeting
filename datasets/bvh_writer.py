@@ -94,6 +94,7 @@ class BvhWriter(object):
         motion = motion.permute(1, 0).detach().cpu().numpy()
         positions = motion[:, -3:]
         rotations = motion[:, :-3]
+        # smooth the position and rotation info
         rotations, positions = gaussian_smooth(rot=rotations, pos=positions)
         if order == 'quaternion':
             rotations = rotations.reshape((motion.shape[0], -1, 4))
