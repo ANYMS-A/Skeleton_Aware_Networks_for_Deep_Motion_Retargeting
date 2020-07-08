@@ -15,7 +15,12 @@ from left to right: input, target, output
 
 
 ### Quick Start
-Just run
+First you need to download the test motion data we need from [google drive](https://docs.google.com/uc?export=download&id=1_849LvuT3WBEHktBT97P2oMBzeJz7-UP) or
+[Baidu Disk](https://pan.baidu.com/s/1z1cQiqLUgjfxlWoajIPr0g).
+
+Place the Mixamo directory within ./datasets/
+
+Then run
 ```bash
 python inference.py
 ```
