@@ -73,24 +73,33 @@ class MotionDataset(Dataset):
             # normalize the data
             rotation, root_position = self._normalize(rotation, root_position, idx)
             # concatenate as final input form [frame, simple_joint_num, 4]
-            concat_array = self._concat_together(rotation, root_position)
+            concat_tensor = self._concat_together(rotation, root_position)
             # convert to tensor [4, simple_joint_num, frame]
-            final_output = self._to_tensor(concat_array)
+            final_output = self._to_format_tensor(concat_tensor)
             # if in training mode, the tensor should be sliced into equal frame length
             # which is convenient for mini-batch training
             if self.args.is_train:
                 final_output = self._slice_to_equal_frame_len(final_output)
             character_list.append(final_output)
-        return character_list[0].float(), character_list[1].float()
+        return character_list[0].float().detach(), character_list[1].float().detach()
 
     def _normalize(self, rot, root_pos, character_idx: int):
         """
         :param rot: [frame, simple_joint_num - 1, 4]
-        :param root_pos: # [frame, 1, 3]
+        :param root_pos:  [frame, 1, 3]
         :param character_idx: idx for get mean and var for different character
         """
-        norm_rot = (rot - self.rot_means[character_idx]) / self.rot_vars[character_idx]
-        norm_root_pos = (root_pos - self.pos_means[character_idx]) / self.pos_vars[character_idx]
+        rot = self._convert_to_tensor(rot)
+        root_pos = self._convert_to_tensor(root_pos)
+
+        self_rot_mean = self._convert_to_tensor(self.rot_means[character_idx])
+        self_rot_var = self._convert_to_tensor(self.rot_vars[character_idx])
+
+        self_pos_mean = self._convert_to_tensor(self.pos_means[character_idx])
+        self_pos_var = self._convert_to_tensor(self.pos_vars[character_idx])
+
+        norm_rot = (rot - self_rot_mean) / self_rot_var
+        norm_root_pos = (root_pos - self_pos_mean) / self_pos_var
         return norm_rot, norm_root_pos
 
     def de_normalize(self, raw: torch.tensor, character_idx: int):
@@ -129,25 +138,28 @@ class MotionDataset(Dataset):
         concatenate the rotation, root_position together as the dynamic input of the
         neural network
         :param rot: rotation matrix with shape [frame, simple_joint_num - 1, 4]
-        :param root_pos: with shape [frame, 1, 3], pad a 0 in axis=2, to make the position with shape
+        :param root_pos: with shape [frame, 1, 3], pad a 0 in dim=2, to make the position with shape
         [frame, 1, 4]
-        :return: numpy Array with shape [frame, simple_joint_num, 4]
+        :return: tensor with shape [frame, simple_joint_num, 4]
         """
-        frame_num = root_pos.shape[0]
+        frame_num = root_pos.size(0)
         # pad 0 make root_pos with shape [frame, 1, 4]
-        pad_root_pos = np.zeros([frame_num, 1, 4])
+        pad_root_pos = torch.zeros([frame_num, 1, 4], dtype=torch.float, device=self.args.cuda_device)
         pad_root_pos[:, :, 0:3] = root_pos
         # concatenate all together
-        result = np.concatenate([pad_root_pos, rot], axis=1)
+        result = torch.cat([pad_root_pos, rot], dim=1)
         return result
 
-    def _to_tensor(self, np_array):
+    def _convert_to_tensor(self, np_array):
+        result = torch.from_numpy(np_array).to(torch.float)
+        result = result.to(self.args.cuda_device) if self.args.use_gpu else result
+        return result
+
+    def _to_format_tensor(self, t):
         """
         :return: Tensor with shape [4, simple_joint_num, frame]
         """
-        result = torch.from_numpy(np_array)
-        result = result.permute(2, 1, 0)
-        result = result.to(self.args.cuda_device) if self.args.use_gpu else result
+        result = t.permute(2, 1, 0)
         return result
 
     def _slice_to_equal_frame_len(self, input_tensor):
@@ -194,7 +206,6 @@ class MotionDataset(Dataset):
         # into [(simple_joint_num - 1) * 4 + 3, frame]
         result = result.permute(1, 0)
         return result
-
 
 
 
