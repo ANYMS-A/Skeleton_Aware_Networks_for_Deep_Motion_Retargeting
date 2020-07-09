@@ -39,13 +39,19 @@ def delete_files(folder: str, file_list: list):
 
 
 def has_equal_frame(path1: str, path2: str) -> bool:
-    _1, names1, frame1 = read_bvh(path1)
-    _2, names2, frame2 = read_bvh(path2)
+    anim1, names1, _ = read_bvh(path1)
+    anim2, names2, _ = read_bvh(path2)
+    frame1 = anim1.positions.shape[0]
+    frame2 = anim2.positions.shape[0]
     if frame1 != frame2:
-        print('*'*10)
-        print('Frame nor equal')
-        print(path1)
-        print(path2)
+        # print('*'*10)
+        # print('Frame nor equal')
+        # print(path1)
+        # print(path2)
+        return False
+    elif anim1.positions.shape[0] < 32 or anim2.positions.shape[0] < 32:
+        # print('*' * 10)
+        # print("Frame too short")
         return False
     else:
         return True
@@ -69,18 +75,21 @@ def split_train_val_files(folder_1, folder_2):
     del_files_1 = list(set(file_list1) - set(file_list))
     del_files_2 = list(set(file_list2) - set(file_list))
     # check whether the frame number are equal
-    for file in file_list:
+    bad_files = []
+    for idx, file in enumerate(file_list):
         # define the path to the bvh files
         path_1 = os.path.join(folder_1, file)
         path_2 = os.path.join(folder_2, file)
         if not has_equal_frame(path_1, path_2):
             del_files_1.append(file)
             del_files_2.append(file)
-            file_list.remove(file)
+            bad_files.append(file)
+    file_list = list(set(file_list) - set(bad_files))
     # delete the bad data, bad means unpaired or have different number of frame
     delete_files(folder_1, del_files_1)
     delete_files(folder_2, del_files_2)
     # create 2 txt file contains the train and val bvh files name
+    print("There are ", len(file_list), " files")
     val_names = file_list[::10]
     train_names = list(set(file_list) - set(val_names))
     write_txt_file('train', train_names)
@@ -90,8 +99,8 @@ def split_train_val_files(folder_1, folder_2):
 
 if __name__ == "__main__":
     # convert the fbx file into bvh file
-    cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
-    os.system(cmd_blender)
+    # cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
+    # os.system(cmd_blender)
     # move the bvh files into .dataset/Mixamo folder
     src = "./datasets/Mixamo_fbx/Aj"
     dst = "./datasets/Mixamo/Aj"

@@ -19,7 +19,7 @@ if __name__ == "__main__":
         since the training stage needs the data to have same tensor size except the batch dim
         so we use the data_loader_collate_function to concatenate the sliced frames along batch dim
         """
-        dataloader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=data_loader_collate_function, shuffle=True)
+        dataloader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=data_loader_collate_function, shuffle=False)
     else:
         dataloader = DataLoader(dataset, batch_size=args.batch_size)
     # topologies&ee_ids for init the neural networks

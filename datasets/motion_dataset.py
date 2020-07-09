@@ -36,7 +36,7 @@ class MotionDataset(Dataset):
         self.joint_nums = []
 
         for character_name in [self.character_a_name, self.character_b_name]:
-            std_bvh_data = BvhData(character_name, motion_file_name="std_bvh")
+            std_bvh_data = BvhData(character_name, motion_file_name=character_name)
             self.topologies.append(std_bvh_data.topology)
             self.edges.append(std_bvh_data.edges)
             self.ee_ids.append(std_bvh_data.get_ee_id())
