@@ -90,15 +90,15 @@ def split_train_val_files(folder_1, folder_2):
 
 if __name__ == "__main__":
     # convert the fbx file into bvh file
-    # cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
-    # os.system(cmd_blender)
+    cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
+    os.system(cmd_blender)
     # move the bvh files into .dataset/Mixamo folder
-    # src = "./datasets/Mixamo_fbx/Aj"
-    # dst = "./datasets/Mixamo/Aj"
-    # move_bvh_files(src, dst)
-    # src = "./datasets/Mixamo_fbx/BigVegas"
-    # dst = "./datasets/Mixamo/BigVegas"
-    # move_bvh_files(src, dst)
+    src = "./datasets/Mixamo_fbx/Aj"
+    dst = "./datasets/Mixamo/Aj"
+    move_bvh_files(src, dst)
+    src = "./datasets/Mixamo_fbx/BigVegas"
+    dst = "./datasets/Mixamo/BigVegas"
+    move_bvh_files(src, dst)
     # create train and validation files list
     split_train_val_files(folder_1="./datasets/Mixamo/Aj", folder_2="./datasets/Mixamo/BigVegas")
 
