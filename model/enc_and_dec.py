@@ -110,7 +110,10 @@ class Encoder(nn.Module):
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.xavier_normal_(m.weight)
-                m.bias.data.fill_(0.01)
+                nn.init.constant_(m.bias, 0.01)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1.0)
+                nn.init.constant_(m.bias, 0.0)
 
 
 class DecBasicBlock(nn.Module):
@@ -186,7 +189,10 @@ class Decoder(nn.Module):
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.xavier_normal_(m.weight)
-                m.bias.data.fill_(0.01)
+                nn.init.constant_(m.bias, 0.01)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1.0)
+                nn.init.constant_(m.bias, 0.0)
 
 
 class StaticEncoder(nn.Module):
@@ -215,7 +221,10 @@ class StaticEncoder(nn.Module):
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.xavier_normal_(m.weight)
-                m.bias.data.fill_(0.01)
+                nn.init.constant_(m.bias, 0.01)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1.0)
+                nn.init.constant_(m.bias, 0.0)
 
 
 
