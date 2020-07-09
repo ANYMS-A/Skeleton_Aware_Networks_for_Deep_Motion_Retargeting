@@ -18,7 +18,7 @@ class MotionDataset(Dataset):
         self.args = args
         self.character_a_name = args.character_A
         self.character_b_name = args.character_B
-        self.bvh_file_list = get_bvh_file_names()
+        self.bvh_file_list = get_bvh_file_names(is_train=args.is_train)
         # topologies and edges are needed when initialize the neural network
         # it's used for calculate the neighboring matrix
         self.topologies = []
