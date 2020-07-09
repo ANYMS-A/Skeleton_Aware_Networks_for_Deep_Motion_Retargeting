@@ -11,14 +11,14 @@ from .bvh_parser import BvhData
 
 
 class MotionDataset(Dataset):
-    def __init__(self, args):
+    def __init__(self, args, mode):
         super(MotionDataset, self).__init__()
         if not args.is_train and args.batch_size != 1:
             raise Exception("If not in train mode, batch_size must be 1")
         self.args = args
         self.character_a_name = args.character_A
         self.character_b_name = args.character_B
-        self.bvh_file_list = get_bvh_file_names(is_train=args.is_train)
+        self.bvh_file_list = get_bvh_file_names(mode=mode)
         # topologies and edges are needed when initialize the neural network
         # it's used for calculate the neighboring matrix
         self.topologies = []

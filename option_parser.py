@@ -8,7 +8,7 @@ def get_parser():
     parser.add_argument('--data_dir', type=str, default='./datasets/Mixamo', help='directory for all savings')
     parser.add_argument('--save_dir', type=str, default='./pretrained', help='directory for all savings')
     parser.add_argument('--is_train', type=int, default=1)
-    parser.add_argument('--batch_size', type=int, default=2, help='batch_size')
+    parser.add_argument('--batch_size', type=int, default=4, help='batch_size')
     parser.add_argument('--cuda_device', type=str, default='cuda:0', help='cuda device number, eg:[cuda:0]')
     parser.add_argument('--use_gpu', type=int, default=1, help='whether use GPU acceleration')
     parser.add_argument('--epoch_num', type=int, default=20001, help='epoch_num')

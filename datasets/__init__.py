@@ -11,10 +11,10 @@ import numpy as np
 import torch
 
 
-def get_bvh_file_names(is_train):
-    if is_train:
+def get_bvh_file_names(mode):
+    if mode == 'train':
         file = open('./datasets/Mixamo/train_bvh_files.txt', 'r')
-    else:
+    elif mode == 'validate':
         file = open('./datasets/Mixamo/validate_bvh_files.txt', 'r')
     files_list = file.readlines()
     files_list = [f[:-1][:-4] for f in files_list]
