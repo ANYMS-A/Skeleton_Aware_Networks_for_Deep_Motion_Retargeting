@@ -13,17 +13,11 @@ if __name__ == "__main__":
     args = get_args()
     args.is_train = 0
     args.batch_size = 1
+    args.cuda_device = 'cuda:1'
     print(args)
     # init dataset&dataLoader for training
-    dataset = MotionDataset(args)
-    if args.is_train:
-        """
-        since the training stage needs the data to have same tensor size except the batch dim
-        so we use the data_loader_collate_function to concatenate the sliced frames along batch dim
-        """
-        dataloader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=data_loader_collate_function, shuffle=True)
-    else:
-        dataloader = DataLoader(dataset, batch_size=args.batch_size)
+    dataset = MotionDataset(args, mode='validate')
+    dataloader = DataLoader(dataset, batch_size=args.batch_size)
     # topologies&ee_ids for init the neural networks
     top_a, top_b = dataset.topologies
     ee_id_a, ee_id_b = dataset.ee_ids
@@ -56,11 +50,11 @@ if __name__ == "__main__":
     criterion_mse = torch.nn.MSELoss()
     criterion_l1 = torch.nn.L1Loss()
     # init TensorBoard Summary Writer
-    epoch = 3600
-    enc_a.load_state_dict(torch.load(f'./pretrained/enc_a_{epoch}.pt'))
-    dec_b.load_state_dict(torch.load(f'./pretrained/dec_b_{epoch}.pt'))
-    static_enc_a.load_state_dict(torch.load(f'./pretrained/static_enc_a_{epoch}.pt'))
-    static_enc_b.load_state_dict(torch.load(f'./pretrained/static_enc_b_{epoch}.pt'))
+    epoch = 1000
+    enc_a.load_state_dict(torch.load(f'./pretrained/model/enc_a_{epoch}.pt'))
+    dec_b.load_state_dict(torch.load(f'./pretrained/model/dec_b_{epoch}.pt'))
+    static_enc_a.load_state_dict(torch.load(f'./pretrained/model/static_enc_a_{epoch}.pt'))
+    static_enc_b.load_state_dict(torch.load(f'./pretrained/model/static_enc_b_{epoch}.pt'))
     # training loop
     enc_a.eval()
     enc_b.eval()

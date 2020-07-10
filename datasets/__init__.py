@@ -16,6 +16,8 @@ def get_bvh_file_names(mode):
         file = open('./datasets/Mixamo/train_bvh_files.txt', 'r')
     elif mode == 'validate':
         file = open('./datasets/Mixamo/validate_bvh_files.txt', 'r')
+    else:
+        raise Exception('mode must be train or validate')
     files_list = file.readlines()
     files_list = [f[:-1][:-4] for f in files_list]
     return files_list

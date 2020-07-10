@@ -153,7 +153,9 @@ def validation(args, encoder_a, encoder_b, static_encoder_a, static_encoder_b, d
             # convert pos to global world pos
             pred_pos_b = fk_transform_b.from_local_to_world(pred_pos_b / 236.57)
             pos_b = fk_transform_b.from_local_to_world(pos_b / 236.57)
+            # world position loss
             rec_loss_3 = 20 * criterion_mse(pred_pos_b, pos_b)
+            # raw rotation and root_position loss
             rec_loss_4 = criterion_mse(pred_dynamic_b, dynamic_b)
             p_bar.set_description('Validate_Epoch: %s, rot: %s, root_pos: %s, world_pos: %s, rot&root_pos: %s' %
                                   (epoch, round(rec_loss_1.item(), 4), round(rec_loss_2.item(), 4),
@@ -248,11 +250,11 @@ if __name__ == "__main__":
         writer.add_scalar('world_pos_loss/validate', loss3_val, epoch)
         writer.add_scalar('rot_and_root_pos_loss/validate', loss4_val, epoch)
 
-        if epoch % 200 == 0:
-            torch.save(enc_a.state_dict(), f'./pretrained/enc_a_{epoch}.pt')
-            torch.save(dec_b.state_dict(), f'./pretrained/dec_b_{epoch}.pt')
-            torch.save(static_enc_a.state_dict(), f'./pretrained/static_enc_a_{epoch}.pt')
-            torch.save(static_enc_b.state_dict(), f'./pretrained/static_enc_b_{epoch}.pt')
+        if epoch % 1000 == 0 or epoch == 1:
+            torch.save(enc_a.state_dict(), f'./pretrained/model/enc_a_{epoch}.pt')
+            torch.save(dec_b.state_dict(), f'./pretrained/model/dec_b_{epoch}.pt')
+            torch.save(static_enc_a.state_dict(), f'./pretrained/model/static_enc_a_{epoch}.pt')
+            torch.save(static_enc_b.state_dict(), f'./pretrained/model/static_enc_b_{epoch}.pt')
 
 
 
