@@ -31,7 +31,20 @@ The output bvh files will be saved in the folder
 ```
 
 ### Train
-Run
+You need to download data from the Mixamo Datasets for training, here is a convenient 
+[intro](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1376068-script-mixamo-download-script) 
+about how to use a script to download fbx data from the Mixamo Datset.
+After downloading, you need to customize the "data_path" variable in the script:
+```bash
+./datasets/fbx2bvh.py
+```
+Then run:
+```bash
+python preprocessing.py
+```
+to convert the fbx files to bvh file, as well as generating the train and validation files list.
+
+At last, run
 ```bash
 python train.py
 ```

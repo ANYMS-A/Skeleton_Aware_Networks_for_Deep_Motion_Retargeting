@@ -99,8 +99,8 @@ def split_train_val_files(folder_1, folder_2):
 
 if __name__ == "__main__":
     # convert the fbx file into bvh file
-    # cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
-    # os.system(cmd_blender)
+    cmd_blender = 'blender -b -P ./datasets/fbx2bvh.py'
+    os.system(cmd_blender)
     # move the bvh files into .dataset/Mixamo folder
     src = "./datasets/Mixamo_fbx/Aj"
     dst = "./datasets/Mixamo/Aj"
